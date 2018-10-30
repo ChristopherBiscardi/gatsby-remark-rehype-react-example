@@ -9,11 +9,18 @@ var markdown = require("remark-parse");
 var remark2rehype = require("remark-rehype");
 var rehype2react = require("rehype-react");
 
+const PReplacement = ({ children, ...props }) => (
+  <p {...props} data-mine="true" style={{ color: "blue" }}>
+    {children}
+  </p>
+);
+
 var processor = unified()
   .use(markdown)
   .use(remark2rehype)
   .use(rehype2react, {
-    createElement: React.createElement
+    createElement: React.createElement,
+    components: { p: PReplacement }
   });
 
 const Layout = ({ data, ...props }) => (
