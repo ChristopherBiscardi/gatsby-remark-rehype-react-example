@@ -10110,6 +10110,14 @@ regjsparser@^0.3.0:
   dependencies:
     jsesc "~0.5.0"
 
+rehype-react@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/rehype-react/-/rehype-react-3.0.3.tgz#868af1b6b454927af8052501910c3cdc531a2b37"
+  integrity sha512-kjejO2ZlEGRvnSjJBfTEd6O7N4UJez2dPHTBT3edHE33iiknURX0ZnuMaOYn8VscATB5xwO9qJKtiGX5iJlt5Q==
+  dependencies:
+    has "^1.0.1"
+    hast-to-hyperscript "^5.0.0"
+
 relay-compiler@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/relay-compiler/-/relay-compiler-1.5.0.tgz#564f1582c549fa6b4af9d9f09dadb5e239c11055"
@@ -10160,6 +10168,13 @@ remark-parse@^5.0.0:
     unist-util-remove-position "^1.0.0"
     vfile-location "^2.0.0"
     xtend "^4.0.1"
+
+remark-rehype@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/remark-rehype/-/remark-rehype-3.0.1.tgz#7c35c08e022ca55bd33719548dd555b1a721a181"
+  integrity sha512-A9oIvjlUwY2qLNrgoH7MxQb6EEs7kgdOXLtY/5CYCnvsupor7e7gTGmfkzccBkqJ/6nkbEdiX3hfY11FAvYGHg==
+  dependencies:
+    mdast-util-to-hast "^3.0.0"
 
 remark-retext@^3.1.0:
   version "3.1.1"
